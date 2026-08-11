@@ -335,15 +335,15 @@
                 <!-- Reservation Form (Visual) -->
                 <div class="bg-stone-850 rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl border border-stone-800 w-full">
                     <h3 class="text-2xl sm:text-3xl font-serif text-white mb-6 sm:mb-8">Book a Table</h3>
-                    <form class="space-y-4 sm:space-y-6">
+                    <form class="fws-contact-form space-y-4 sm:space-y-6">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                             <div>
                                 <label class="block text-xs sm:text-sm font-medium text-stone-400 mb-2">Name</label>
-                                <input type="text" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors text-sm sm:text-base" placeholder="Your name">
+                                <input name="name" type="text" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors text-sm sm:text-base" placeholder="Your name">
                             </div>
                             <div>
                                 <label class="block text-xs sm:text-sm font-medium text-stone-400 mb-2">Email</label>
-                                <input type="email" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors text-sm sm:text-base" placeholder="Your email">
+                                <input name="email" type="email" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors text-sm sm:text-base" placeholder="Your email">
                             </div>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -363,12 +363,14 @@
                         </div>
                         <div>
                             <label class="block text-xs sm:text-sm font-medium text-stone-400 mb-2">Special Requests</label>
-                            <textarea rows="3" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors text-sm sm:text-base" placeholder="Any dietary requirements?"></textarea>
+                            <textarea name="message" rows="3" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors text-sm sm:text-base" placeholder="Any dietary requirements?"></textarea>
                         </div>
                         <button type="button" class="w-full bg-amber-600 hover:bg-amber-700 active:bg-amber-800 text-white px-8 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm font-bold tracking-wider uppercase transition-all shadow-lg hover:shadow-amber-600/30 mt-2 sm:mt-4">
                             Confirm Reservation
                         </button>
-                    </form>
+                    
+<p class="fws-form-status mt-4 text-sm"></p>
+</form>
                 </div>
             </div>
         </div>
